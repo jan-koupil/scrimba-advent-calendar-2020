@@ -146,13 +146,13 @@ If the world was composed out of Chrome only, I would prefer the *Set.has* appro
 ## [Challenge 8: 🔔 The Rolling Dice](https://scrimba.com/scrim/co12c41419ae303e77827f312)
 I really enjoyed this one. A nice use for a [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). My `Dice` class simply creates all dots at specific places (given by relative coordinates <-1 to 1>) and at a `showFace()` command simply hides all and then displays the appropriate ones.
 
-When loaded, Scrimba sometimes shows an error I don't understand and probably has something to do with the way of loading code in Scrimba. Simple click the "Go to index" link fixes it.
+When loaded, Scrimba sometimes shows an error I don't understand and probably has something to do with the way of loading code in Scrimba. Clicking the "Go to index" link fixes it.
 
 ## [Challenge 9: 🎺 Sum Odd Fibonacci Numbers](https://scrimba.com/scrim/cob604d489f7d1a51fd3c7cd9)
 What for a set of coding challenges would it be if  some form of Fibonacci numbers weren't included! But then, they're just Fibonacci numbers, nothing more, nothing less.
 
 ## [Challenge 10:💂‍♀️ Adjacent Elements Product](https://scrimba.com/scrim/cof504fec874bc4d674847372)
-Another example of array reduction. Or maybe a simple traversing through array? Could we compare those?
+Another example of array reduction. Or maybe a simple traversing through an array? Could we compare those?
 
 |#|Chrome|Firefox|
 |--- |--- |--- |
@@ -179,7 +179,7 @@ This challenge is very similar to challenge 10, just with a simple change of red
 I really like [my solution](https://scrimba.com/scrim/co9ec44648fde63c8f304ac45) using **css custom properties**. As a bonus, I added navigation button disabling and decent transition effects at hovering over them.
 
 ## [Challenge 16:🧦 Insert Dashes](https://scrimba.com/scrim/co2f64c249c48b125731d0a90)
-This was an excellent opportunity to revise look-ahead in RegEx. They're so cool and they make you look like a pro. The perfomance tests on 1M chars string, however, show…
+This was an excellent opportunity to revise look-ahead in RegEx. They're so cool and they make you look like a pro. The performance tests on 1M chars string, however, show…
 
 |#|Chrome|Firefox|
 |--- |--- |--- |
@@ -219,9 +219,9 @@ The tests on 1M cycles of a string:
 Despite the - previously proved - efficiency of a simple if-else or switch-case structure, I would definitely recommend the use of a JavaScript [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) (some of us call it a dictionary). This is a typical use case for a map. Also, if the domain-type data came from a database of file storage, the hard-coded ifs and switches wouldn't be an option.
 
 ## [Challenge 21: 🦃 Sum of Two](https://scrimba.com/scrim/co06b4bdd93064b651e91da08)
-This is a hidden gem. The basic idea is to traverse one array and then check for expected value in the other, ie. traverse it as well. It does not matter much, whether you use `Array.some` like I did, create mapping object like the tutor, use the native `Map` class or whatever, the traversing is there.
+This is a hidden gem. The basic idea is to traverse one array and then check for the expected value in the other, ie. traverse it as well. It does not matter much, whether you use `Array.some` like I did, create mapping object like the tutor, use the native `Map` class or whatever, the traversing is there.
 
-However, what if the input arrays were huge? Then we could spare some time on sorting the second array and implement binary of even tangential search there. In my test, you can try playing with the numbers, however, the binary search produces one half or one third time (in average) on arrays of length 1000. Sometimes, of course, the expected value is there at the beginning and the time for sorting array is lost - the benefit is there only for many repeated searches.
+However, what if the input arrays were huge? Then we could spare some time on sorting the second array and implement binary of even tangential search there. In my test, you can try playing with the numbers, however, the binary search produces one-half or one-third time (in average) on arrays of length 1000. Sometimes, of course, the expected value is there at the beginning and the time for sorting array is lost - the benefit is there only for many repeated searches.
 
 ## [Challenge 22: 👼 Extract Matrix Column](https://scrimba.com/scrim/co50f4ec5a3c899cd99d0f0aa)
 If we could extract only one number - the one sitting at the given index - from each of the inner arrays contained in the outer array, we would have won…

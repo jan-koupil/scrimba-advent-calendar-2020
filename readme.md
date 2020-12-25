@@ -17,7 +17,7 @@ This is a one-liner, really an intro.
 
 A simple challenge, probably intented to be solved by using a while loop, linear in time. However, a constant-time solution should be always preferred and since this is a simple geometric series, lets make it a one-line calculation again.
 
-## [Challenge 3: 🧚 Chunky Monkey ](https://scrimba.com/scrim/co31344d390bfe52d8f8465c6)
+## [Challenge 3: 🧚 Chunky Monkey ](https://scrimba.com/scrim/co62443f1997eb196060e9685)
 
 Now we are getting somewhere. Not that it is a complicated problem. But it also isn't a one-line calculation and we can try to measure performance. 
 
@@ -52,7 +52,7 @@ Another one-line calculation.
 
 ## [Challenge 5: 🐑 Reverse a String](https://scrimba.com/scrim/co460458289fdc20f19390c00)
 
-Another one-liner. Or not? Compare
+A one-liner again. Or not? Compare
 
 ```
 const reverseAString = (str) => str.split("").reverse().join("");
@@ -70,10 +70,15 @@ function reverseAString(str) {
 While the first is short and ellegant, shouldn't the verbose second be quicker? We are not creating a temporary array etc.?
 
 The results differ in major browsers for short input strings:
-* for 150 chars I get some 0.70 ms and 0.18 ms in Chrome compared to 0.10 ms and 0.16 ms in FF
-* for 15000 chars, both Chrome and FF show the first syntax as superior ( 0.70 ms and 2.40 ms in Chrome, 0.62 ms and 1.30 ms in FF)
 
-It seems that a known size of the array is prefereable to the single cycling through the string.
+|chars|method|Chrome|Firefox|
+|--- |--- |--- |--- |
+|150|split&join|0.60 ms|0.10 ms|
+|150|traversing|0.18 ms|0.16 ms|
+|15,000|split&join|0.70 ms|0.62 ms|
+|15,000|traversing|2.40 ms|1.30 ms|
+
+It seems that a known size of the array is prefereable to the single traversing through the string, at least for larger inputs, where the effect is measurable.
 
 ## [Challenge 6: 🤶 Sort by Length](https://scrimba.com/scrim/coaf14cdb814ee919c9861384)
 
@@ -81,7 +86,7 @@ A one-line solution using the native sort function designed to sort integers. In
 
 ## [Challenge 7: 🦌 Count Vowel Consonant](https://scrimba.com/scrim/co6a94430bcc82803bc0bb306)
 
-This is a nice use of an `array.reduce`.
+This is a nice use of an [`Array.reduce`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
 Even though this solution can be rewritten as a one-liner, I prefer not to. The legibility would be reduced greatly and no measurable performance or memory reduction can be gained out of it.
 
@@ -136,12 +141,12 @@ In Firefox, the simplistic approaches win significantly with *case* leading.
 |Array.includes|387 ms|450 ms|
 |Set.has|382 ms|497 ms|
 
-If the world was compoused out of Chrome only, I would prefer the *Set.has* approach because of its semantic clearness. This is one of the things for which the Set has been designed. But now? Decide for yourself.
+If the world was composed out of Chrome only, I would prefer the *Set.has* approach because of its semantic clearness. This is one of the things for which the [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) has been designed. But now? Decide for yourself.
 
 ## [Challenge 8: 🔔 The Rolling Dice](https://scrimba.com/scrim/co12c41419ae303e77827f312)
 I really enjoyed this one. A nice use for a [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map). My `Dice` class simply creates all dots at specific places (given by relative coordinates <-1 to 1>) and at a `showFace()` command simply hides all and then displays the appropriate ones.
 
-When loaded, Scrimba shows an error I don't understand and probably has something to do with the way of loading code in Scrimba. Simply clicking the "Go to index" link fixes it.
+When loaded, Scrimba sometimes shows an error I don't understand and probably has something to do with the way of loading code in Scrimba. Simply clicking the "Go to index" link fixes it.
 
 ## [Challenge 9: 🎺 Sum Odd Fibonacci Numbers](https://scrimba.com/scrim/cob604d489f7d1a51fd3c7cd9)
 What for a set of coding challenges would it be if  some form of Fibonacci numbers weren't included! But then, they're just Fibonacci numbers, nothing more, nothing less.
@@ -221,7 +226,7 @@ However, what if the input arrays were huge? Then we could spare some time on so
 ## [Challenge 22: 👼 Extract Matrix Column](https://scrimba.com/scrim/co50f4ec5a3c899cd99d0f0aa)
 If we could extract only one number - the one sitting at given index - from each of inner arrays contained in the outer array, we would have won…
 
-…and that's exactly what an `Array.map` could do for us.
+…and that's exactly what an [`Array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) could do for us.
 
 ## [Challenge 23: 🌠 Social Media Input](https://scrimba.com/scrim/co4f54052b28c9320e9c15298)
 Putting a Twitter form alive was one of those four html-css-js challenges hidden among the pure JS tasks. I found two unanswered mysteries here
@@ -235,4 +240,6 @@ Nevertheless, the challenge is solved.
 The final one is again a frontend challenge. It was interesting for me to see, how other people write asynchronous functions and what their coding style is.
 
 ## An afterword
-To while writing this, I had to check other's solutions to some of the challenges, just to see if I hadn't missed some interesting solutions. I was surprised, how many of the solutions were wrong and passing only the one very test provided by Scrimba but failing e.g. on a longer input array. I really enjoyed the idea of the calendar, however a more thorough testing would definitely be benefitial if the event should repeat in future.
+While writing this, I decided to check other's solutions to some of the challenges, just to see if I hadn't missed some interesting solutions. I was surprised, how many of the solutions were wrong and passing only the one very test provided by Scrimba but failing e.g. on a longer or differently sorted input array. 
+
+I really enjoyed the idea of the calendar, however a more thorough testing would definitely be benefitial if the event should repeat in future.

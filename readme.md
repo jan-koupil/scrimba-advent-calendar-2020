@@ -6,7 +6,7 @@ First promising interesting challenges, it started to repetitive a bit, but fina
 Let's list those challenges and add some detail to them.
 
 ## A humble warning
-*This text contains some performance tests. These are very simple synthetic tests on unnaturally many iterations or insanely long inputs and can differ from real-life usage. All the tests can be checked at*
+*This text contains some performance tests. These are very simple synthetic tests on unnaturally many iterations or insanely long inputs and can differ from real-life usage. All the tests can be checked at https://github.com/jan-koupil/scrimba-advent-calendar-2020*
 
 
 ## [Challenge 1: 🍬 Intro](https://scrimba.com/scrim/cob9641788b7a3e77490f4251)

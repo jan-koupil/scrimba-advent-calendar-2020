@@ -1,7 +1,7 @@
 # The Scrimba JavaScriptmas calendar
 Once upon a time, there was an [Advent calendar published by Scrimba](https://scrimba.com/learn/adventcalendar/). 
 
-First promising interesting challenges, it started to repetitive a bit, but finally, it showed up to be an interesting material to study.
+The promising interesting challenges at first started to be repetitive a bit after a while, but finally, it showed up to be an interesting material to study.
 
 Let's list those challenges and add some detail to them.
 
